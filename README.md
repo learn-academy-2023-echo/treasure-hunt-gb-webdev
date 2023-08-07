@@ -12,11 +12,15 @@ As a developer, you are tasked with creating a treasure hunt game. The user will
 - As a user, I can see a page with a three by three grid board game with a question mark in each square.
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
 
-- As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
-
 - Passed in the index to Square.js
 - Established the key value for the map function
 - Created function to handle the alert when clicked
+
+- As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
+
+- Branch - tree-location
+- made a copy of the board using the spread operator
+- updated the value of square at specific index to be the tree emoji
 
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.

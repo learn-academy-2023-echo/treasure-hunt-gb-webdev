@@ -3,6 +3,11 @@ import Square from "./components/Square"
 import "./App.css"
 
 const App = () => {
+  const handleGamePlay = (clickedSquare) => {
+    let updateBoard = [...board]
+    updateBoard[clickedSquare] = "🌴"
+    setBoard(updateBoard)
+  }
   const [board, setBoard] = useState([
     "?",
     "?",
@@ -15,6 +20,7 @@ const App = () => {
     "?"
   ])
 
+  
   return (
     <>
       <h1>Treasure Hunt Game</h1>
@@ -22,7 +28,9 @@ const App = () => {
       {board.map((square, index) => {
         return <Square
         square={square} index={index}
-        key={index} />
+        key={index}
+        handleGamePlay={handleGamePlay}
+        />
       })}
       </div>
     </>
